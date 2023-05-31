@@ -1,15 +1,13 @@
-const listaVideos = () => {
-  return fetch('https://api-prueba-coral.vercel.app/videos')
-    .then((respuesta) => {
-      if (respuesta.ok) {
-        return respuesta.json();
-      }
-      throw new Error('No fue posible listar los videos.')
-    });
+const listaVideos = async () => {
+  const respuesta = await fetch('https://api-prueba-coral.vercel.app/videos');
+  if (respuesta.ok) {
+    return respuesta.json();
+  }
+  throw new Error('No fue posible listar los videos.');
 }
 
-const crearVideo = (titulo, url, img, categoria, descripcion, codigo) => {
-  return fetch('https://api-prueba-coral.vercel.app/videos', {
+const crearVideo = async (titulo, url, img, categoria, descripcion, codigo) => {
+  const respuesta = await fetch('https://api-prueba-coral.vercel.app/videos', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -20,34 +18,34 @@ const crearVideo = (titulo, url, img, categoria, descripcion, codigo) => {
       img: img,
       categoria: categoria,
       descripcion: descripcion,
-      codigo: codigo,
+      codigo: codigo
     })
-  }).then(respuesta => {
-    if (respuesta.ok) {
-      return respuesta.body;
-    }
-    throw new Error('No fue posible registrar un video.');
-  })
+  });
+  if (respuesta.ok) {
+    return respuesta.body;
+  }
+  throw new Error('No fue posible registrar un video.');
 }
 
-const video = (id) => {
-  return fetch(`https://api-prueba-coral.vercel.app/videos`)
-    .then(respuesta => {
-      if (respuesta.ok) {
-        return respuesta.json();
-      }
-      throw new Error('No se pudo encontrar el video.')
-    });
+const video = async (id) => {
+  const respuesta = await fetch(`https://api-prueba-coral.vercel.app/videos`);
+  if (respuesta.ok) {
+    return respuesta.json();
+  }
+  throw new Error('No se pudo encontrar el video.');
 }
 
-const listCategorias = () => {
-  return fetch('https://api-prueba-coral.vercel.app/categoria')
-    .then(resp => resp.json())
-    .catch(err => console.log(err))
+const listCategorias = async () => {
+  try {
+    const resp = await fetch('https://api-prueba-coral.vercel.app/categoria');
+    return await resp.json();
+  } catch (err) {
+    return console.log(err);
+  }
 }
 
-const crearCategoria = (nombre, descripcion, clr, codigo) => {
-  return fetch('https://api-prueba-coral.vercel.app/categoria', {
+const crearCategoria = async (nombre, descripcion, clr, codigo) => {
+  const respuesta = await fetch('https://api-prueba-coral.vercel.app/categoria', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -58,26 +56,24 @@ const crearCategoria = (nombre, descripcion, clr, codigo) => {
       clr: clr,
       codigo: codigo
     })
-  }).then(respuesta => {
-    if (respuesta.ok) {
-      return respuesta.body;
-    }
-    throw new Error('No se puede registrar una categoría.');
-  })
+  });
+  if (respuesta.ok) {
+    return respuesta.body;
+  }
+  throw new Error('No se puede registrar una categoría.');
 }
 
-const removerCategoria = (id) => {
-  return fetch(`https://api-prueba-coral.vercel.app/categoria`, {
+const removerCategoria = async (id) => {
+  const respuesta = await fetch(`https://api-prueba-coral.vercel.app/categoria`, {
     method: 'DELETE'
-  }).then(respuesta => {
-    if (!respuesta.ok) {
-      throw new Error('No se puede eliminar la categoría.');
-    }
-  })
+  });
+  if (!respuesta.ok) {
+    throw new Error('No se puede eliminar la categoría.');
+  }
 }
 
-const editCategoria = (id, nombre, descripcion, clr, codigo) => {
-  return fetch(`https://api-prueba-coral.vercel.app/categoria`, {
+const editCategoria = async (id, nombre, descripcion, clr, codigo) => {
+  const respuesta = await fetch(`https://api-prueba-coral.vercel.app/categoria`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json'
@@ -88,12 +84,11 @@ const editCategoria = (id, nombre, descripcion, clr, codigo) => {
       clr: clr,
       codigo: codigo
     })
-  }).then(respuesta => {
-    if (respuesta.ok) {
-      return respuesta.json();
-    }
-    throw new Error('No se puede editar la categoría.');
-  })
+  });
+  if (respuesta.ok) {
+    return respuesta.json();
+  }
+  throw new Error('No se puede editar la categoría.');
 }
 
 export const videosService = {
