@@ -1,5 +1,5 @@
 const listaVideos = () => {
-  return fetch('')
+  return fetch('https://api-prueba-coral.vercel.app/videos')
     .then((respuesta) => {
       if (respuesta.ok) {
         return respuesta.json();
@@ -9,7 +9,7 @@ const listaVideos = () => {
 }
 
 const crearVideo = (titulo, url, img, categoria, descripcion, codigo) => {
-  return fetch('', {
+  return fetch('https://api-prueba-coral.vercel.app/videos', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ const crearVideo = (titulo, url, img, categoria, descripcion, codigo) => {
 }
 
 const video = (id) => {
-  return fetch(``)
+  return fetch(`https://api-prueba-coral.vercel.app/videos`)
     .then(respuesta => {
       if (respuesta.ok) {
         return respuesta.json();
@@ -41,13 +41,13 @@ const video = (id) => {
 }
 
 const listCategorias = () => {
-  return fetch('')
+  return fetch('https://api-prueba-coral.vercel.app/categoria')
     .then(resp => resp.json())
     .catch(err => console.log(err))
 }
 
 const crearCategoria = (nombre, descripcion, clr, codigo) => {
-  return fetch('', {
+  return fetch('https://api-prueba-coral.vercel.app/categoria', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -67,7 +67,7 @@ const crearCategoria = (nombre, descripcion, clr, codigo) => {
 }
 
 const removerCategoria = (id) => {
-  return fetch(``, {
+  return fetch(`https://api-prueba-coral.vercel.app/categoria`, {
     method: 'DELETE'
   }).then(respuesta => {
     if (!respuesta.ok) {
@@ -77,7 +77,7 @@ const removerCategoria = (id) => {
 }
 
 const editCategoria = (id, nombre, descripcion, clr, codigo) => {
-  return fetch(``, {
+  return fetch(`https://api-prueba-coral.vercel.app/categoria`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json'
