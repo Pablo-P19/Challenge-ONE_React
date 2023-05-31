@@ -215,61 +215,8 @@
       "descripcion": "\"Maneskin RTL\" es una presentación vibrante que destaca el carisma y el talento de la banda italiana. Con su estilo único de rock y su actitud desafiante, Maneskin cautiva al público con su poderosa presencia en el escenario. Las letras provocativas, los riffs enérgicos y la entrega apasionada crean una experiencia inolvidable llena de actitud rockera y autenticidad. Un espectáculo que muestra por qué Maneskin se ha convertido en una sensación global.",
       "codigo": "maneskin",
       "id": 24
-    },
-    {
-      "titulo": "wertyu",
-      "url": "https://www.youtube.com/watch?v=RoE5DCsCzf4",
-      "img": "https://i.ytimg.com/vi/RoE5DCsCzf4/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBnpDCqbCkFXdYka-Sa9gIaRaNemA",
-      "categoria": "probas",
-      "descripcion": "wertuyi",
-      "codigo": "qwert",
-      "id": 25
-    },
-    {
-      "titulo": "wertyu",
-      "url": "https://www.youtube.com/watch?v=RoE5DCsCzf4",
-      "img": "https://i.ytimg.com/vi/RoE5DCsCzf4/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBnpDCqbCkFXdYka-Sa9gIaRaNemA",
-      "categoria": "probas",
-      "descripcion": "wertuyi",
-      "codigo": "qwert",
-      "id": 26
-    },
-    {
-      "titulo": "wertyu",
-      "url": "https://www.youtube.com/watch?v=RoE5DCsCzf4",
-      "img": "https://i.ytimg.com/vi/RoE5DCsCzf4/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBnpDCqbCkFXdYka-Sa9gIaRaNemA",
-      "categoria": "probas",
-      "descripcion": "wertuyi",
-      "codigo": "qwert",
-      "id": 27
-    },
-    {
-      "titulo": "wertyu",
-      "url": "https://www.youtube.com/watch?v=RoE5DCsCzf4",
-      "img": "https://i.ytimg.com/vi/RoE5DCsCzf4/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBnpDCqbCkFXdYka-Sa9gIaRaNemA",
-      "categoria": "probas",
-      "descripcion": "wertuyi",
-      "codigo": "qwert",
-      "id": 28
-    },
-    {
-      "titulo": "wertyu",
-      "url": "https://www.youtube.com/watch?v=RoE5DCsCzf4",
-      "img": "https://i.ytimg.com/vi/RoE5DCsCzf4/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBnpDCqbCkFXdYka-Sa9gIaRaNemA",
-      "categoria": "probas",
-      "descripcion": "wertuyi",
-      "codigo": "qwert",
-      "id": 29
-    },
-    {
-      "titulo": "wertyu",
-      "url": "https://www.youtube.com/watch?v=RoE5DCsCzf4",
-      "img": "https://i.ytimg.com/vi/RoE5DCsCzf4/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBnpDCqbCkFXdYka-Sa9gIaRaNemA",
-      "categoria": "probas",
-      "descripcion": "wertuyi",
-      "codigo": "qwert",
-      "id": 30
     }
+    
   ],
   "categoria": [
     {
