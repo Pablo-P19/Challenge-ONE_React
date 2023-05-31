@@ -1,0 +1,42 @@
+.btnPrincipal {
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-text);
+  width: 8rem;
+  height: 3rem;
+}
+
+.headerBtn {
+  border: solid 1px var(--color-bordeBtn);
+  cursor: pointer;
+  background: linear-gradient(45deg, var(--color-btnBack), var(--color-FXbtn), var(--color-btnBack));
+  background-size: 200% 200%;
+  transition: background-position 0.5s;
+}
+
+.headerBtn:hover {
+  background-position: 100% 50%;
+}
+
+.bannerBtn {
+  border: solid 2px var(--color-bordeBtn);
+  font-size: 35px;
+  width: 15rem;
+  height: 4rem;
+  background: linear-gradient(45deg, var(--color-primary), var(--color-FXbtn), var(--color-primary));
+  background-size: 200% 200%;
+  transition: background-position 0.5s;
+}
+
+.bannerBtn:hover {
+  background-position: 100% 50%;
+}
+
+@media screen and (max-width:500px) {
+  .bannerBtn {
+    font-size: 45px;
+  }
+}

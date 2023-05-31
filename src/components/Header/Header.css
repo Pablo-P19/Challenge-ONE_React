@@ -1,0 +1,45 @@
+.header {
+  background-color: var(--color-black-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1.5px var(--color-primary);
+  padding: 1rem 6rem;
+}
+
+.header img {
+  width: 10rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 950px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header Button {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-btnBack);
+    border-radius: 0;
+    border: 0;
+    text-align: center;
+    z-index: 100;
+    width: 100%;
+    color: var(--color-btn);
+    border-top: 1.5px solid var(--color-btn);
+  }
+}

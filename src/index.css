@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #e42a2a;
+  --color-black-dark: rgba(0, 0, 0, 0.9);
+  --color-text: #FFF;
+  --color-btn: #00FFFF;
+  --color-btnBack: #000;
+  --color-FXbtn: #1a1a1a;
+  --color-bordeBtn: #8d8d8d;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-black-dark);
+  color: var(--color-text);
+}
+
+.container {
+  padding: 1.5rem 3.5rem;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+}
+
+code {
+  font-family: 'Roboto', sans-serif;
+}
